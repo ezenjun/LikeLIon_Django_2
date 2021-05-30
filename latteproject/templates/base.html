@@ -25,15 +25,15 @@
                         <a class="nav-link active" aria-current="page">{{user.username}}님 반갑습니다! {{user.email}}</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'aboutme' %}">About Me</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'logout' %}">Logout</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'mypage' %}">Mypage</a>
                     </li>
                     {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'aboutme' %}">About Me</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'signup' %}">Signup</a>
                     </li>
